@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+  /* 1. Define Your Custom Colors */
+  --color-keywe-light: #84cc76;
+  --color-keywe-dark: #5aab4c;
+  --color-keywe-bg: #fcfcfc;
+  --color-keywe-pale: #e9f5e9;
+
+  /* 2. Define Fonts */
+  --font-sans: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  /* 3. Define Shadows */
+  --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.05);
+  --shadow-hover: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* 4. Custom Utility Classes */
+@layer components {
+  /* Gradient Button */
+  .btn-keywe-gradient {
+    @apply bg-gradient-to-r from-keywe-light to-keywe-dark text-white font-bold px-6 py-2 rounded-full transition-opacity duration-200 hover:opacity-90 shadow-sm border-0;
+  }
+  
+  /* Outline Button */
+  .btn-keywe-outline {
+    @apply bg-white border border-gray-200 text-gray-800 font-semibold px-6 py-2 rounded-full transition-all duration-200 hover:bg-gray-50 hover:-translate-y-px shadow-sm;
+  }
+
+  /* Location Badge */
+  .badge-location {
+    @apply bg-gray-50 border border-gray-200 font-medium cursor-pointer rounded-full px-4 py-1 flex items-center gap-2 text-gray-800;
+  }
+}
+
+/* 5. Global Reset */
+body {
+  @apply bg-keywe-bg pt-20;
+}
