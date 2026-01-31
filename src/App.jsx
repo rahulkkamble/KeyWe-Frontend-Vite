@@ -5,6 +5,7 @@ import HomePageHeader from './HomePageHeader';
 import HomeHeroSection from './HomeHeroSection';
 import PropertyList from './PropertyList';
 import RecommendationsSection from './RecommendationsSection';
+import StatsCounter from './StatsCounter';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <HomeHeroSection />
       <PropertyList />
       <RecommendationsSection />
+      <StatsCounter />
     </div>
   );
 }
