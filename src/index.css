@@ -5,14 +5,24 @@
   --color-keywe-light: #84cc76;
   /* --color-keywe-light: oklch(0.82 0.19 129.72); */
   /* --color-keywe-dark: #5aab4c; */
-  --color-keywe-dark: oklch(0.64 0.18 141.06);
-  
+  /* --color-keywe-dark: oklch(0.64 0.18 141.06); */
+  --color-keywe-dark: #6fb96f;
+  --color-keywe-primary: #6fb96f;
+
+  --color-keywe-heading: #1f3d3a;
+  --color-keywe-bg-green: #eef6ee;
   --color-keywe-bg: #fcfcfc;
   --color-keywe-pale: #e9f5e9;
 
-  /* 2. Define Fonts */
-  --font-sans: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --color-keywe-primary-text: #2b2b2b;
+  --color-keywe-secondary-text: #6e6e6e;
 
+  --color-keywe-border: #e6e6e6;
+
+  /* 2. Define Fonts */
+  /* --font-sans: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
+  --font-sans: "Montserrat", "Segoe UI", sans-serif;
+  --font-inter: "Inter", "Segoe UI", sans-serif;
   /* 3. Define Shadows */
   --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.05);
   --shadow-hover: 0 12px 24px rgba(0, 0, 0, 0.1);
@@ -24,7 +34,7 @@
   .btn-keywe-gradient {
     @apply bg-gradient-to-r from-keywe-light to-keywe-dark text-white font-bold px-6 py-2 rounded-full transition-opacity duration-200 hover:opacity-90 shadow-sm border-0;
   }
-  
+
   /* Outline Button */
   .btn-keywe-outline {
     @apply bg-white border border-gray-200 text-gray-800 font-semibold px-6 py-2 rounded-full transition-all duration-200 hover:bg-gray-50 hover:-translate-y-px shadow-sm;

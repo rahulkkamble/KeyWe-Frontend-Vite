@@ -1,6 +1,6 @@
 // --- App.js ---
 import React from 'react';
-// import './App.css';
+import './App.css';
 import HomePageHeader from './HomePageHeader';
 import HomeHeroSection from './HomeHeroSection';
 import PropertyList from './PropertyList';
