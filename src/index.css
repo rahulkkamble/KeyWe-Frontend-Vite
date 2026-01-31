@@ -3,7 +3,10 @@
 @theme {
   /* 1. Define Your Custom Colors */
   --color-keywe-light: #84cc76;
-  --color-keywe-dark: #5aab4c;
+  /* --color-keywe-light: oklch(0.82 0.19 129.72); */
+  /* --color-keywe-dark: #5aab4c; */
+  --color-keywe-dark: oklch(0.64 0.18 141.06);
+  
   --color-keywe-bg: #fcfcfc;
   --color-keywe-pale: #e9f5e9;
 
@@ -35,5 +38,5 @@
 
 /* 5. Global Reset */
 body {
-  @apply bg-keywe-bg pt-20;
+  @apply bg-keywe-bg pt-16;
 }
