@@ -1,3 +1,5 @@
+import keyWeLogo from './assets/images/logo/KeyWe Logo Horizontal.png';
+
 const HomePageHeader = () => {
   return (
     <header className="fixed top-0 left-0 right-0 bg-white shadow-sm z-50 py-3">
@@ -7,8 +9,8 @@ const HomePageHeader = () => {
         <div className="flex items-center justify-between w-full">
 
           {/* 1. LEFT SIDE (Flex = 1) */}
-          {/* 'hidden md:flex' hides this on mobile, pushing logo to left */}
-          <div className="flex-1 hidden md:flex items-center">
+          {/* 'hidden lg:flex' hides this on mobile, pushing logo to left */}
+          <div className="flex-1 hidden lg:flex items-center">
              {/* Uncomment if needed:
              <button className="text-gray-800 p-0 mr-3">
                 <List size={30} />
@@ -19,14 +21,7 @@ const HomePageHeader = () => {
 
           {/* 2. CENTER: Brand Logo */}
           <a className="flex items-center font-bold text-2xl text-gray-900 no-underline hover:text-gray-900" href="/">
-            <span className="mr-2 text-keywe-dark flex items-center">
-              {/* <svg width="32" height="32" viewBox="0 0 16 16" fill="currentColor">
-                <circle cx="8" cy="8" r="8" fill="#84cc76" />
-                <path d="M8 4a4 4 0 0 1 4 4v4H4V8a4 4 0 0 1 4-4z" fill="#fff" />
-              </svg> */}
-              <img src="../assets/KeyWe Logo Horizontal.png" alt="keywe-logo" srcset="" />
-            </span>
-            KeyWe
+              <img className="h-10 w-auto object-contain" src={keyWeLogo} alt="keywe-logo" srcset="" />
           </a>
 
           {/* 3. RIGHT SIDE (Flex = 1) */}
