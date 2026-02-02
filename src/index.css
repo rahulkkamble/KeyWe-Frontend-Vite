@@ -8,15 +8,12 @@
   /* --color-keywe-dark: oklch(0.64 0.18 141.06); */
   --color-keywe-dark: #6fb96f;
   --color-keywe-primary: #6fb96f;
-
   --color-keywe-heading: #1f3d3a;
   --color-keywe-bg-green: #eef6ee;
   --color-keywe-bg: #fcfcfc;
   --color-keywe-pale: #e9f5e9;
-
   --color-keywe-primary-text: #2b2b2b;
   --color-keywe-secondary-text: #6e6e6e;
-
   --color-keywe-border: #e6e6e6;
 
   /* 2. Define Fonts */
@@ -36,7 +33,7 @@
   } */
    .btn-keywe-gradient {
     /* Added 'relative' and 'overflow-hidden' to contain the grain layer */
-    @apply relative overflow-hidden bg-gradient-to-l from-keywe-light to-keywe-dark text-white font-medium px-6 py-2 rounded-full transition-opacity duration-200 hover:opacity-90 shadow-sm border-0;
+    @apply relative overflow-hidden bg-gradient-to-l from-keywe-light to-keywe-dark text-white font-medium px-6 py-2 rounded-full transition-opacity duration-200 hover:opacity-90 hover:cursor-pointer shadow-sm border-0;
   }
 
   /* 2. Add the Grain Pseudo-Element */
@@ -53,9 +50,10 @@
     mix-blend-mode: overlay;
   }
 
+
   /* Outline Button */
   .btn-keywe-outline {
-    @apply bg-white border border-gray-200 text-gray-800 font-medium px-6 py-2 rounded-full transition-all duration-200 hover:bg-gray-50 hover:-translate-y-px shadow-sm;
+    @apply bg-white border border-gray-200 text-gray-800 font-medium px-6 py-2 rounded-full transition-all duration-200 hover:bg-gray-50 hover:-translate-y-px hover:cursor-pointer shadow-sm;
   }
 
   /* Location Badge */
